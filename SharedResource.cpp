@@ -162,7 +162,7 @@ void InitDX(HWND hWndDX) {
   hr = g_pDevice->CreateTexture(rtDesc.Width,
                                 rtDesc.Height,
                                 1,
-                                0,
+                                D3DUSAGE_RENDERTARGET,
                                 rtDesc.Format,
                                 D3DPOOL_DEFAULT,
                                 &g_pSharedTexture,
